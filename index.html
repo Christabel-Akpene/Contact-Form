@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Contact Us</h1>
+
+      <div>
+        <div>
+          <label for="firstname">First Name *</label>
+          <input type="text" name="" id="firstname" />
+        </div>
+        <div>
+          <label for="lastname">Last Name *</label>
+          <input type="text" name="" id="firstname" />
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email Address *</label>
+        <input type="text" id="email" name="email" />
+      </div>
+
+      <div>
+        <label for="query">Query Type *</label>
+        <div class="general">
+          <div>
+            <input type="radio" name="query" id="" />General Query
+          </div>
+          <div>
+            <input type="radio" name="query" id="" />Support Request
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="message">Message *</label>
+        <textarea name="message" id="message" rows="4" cols="20"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="consent" id="consent" /> I consent to being
+        contacted by the team
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
