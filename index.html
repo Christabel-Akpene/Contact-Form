@@ -3,51 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Contact Form</title>
   </head>
   <body>
-    <form class="form">
-      <h1 class="form__header">Contact Us</h1>
+    <form class="contact-form">
+      <h1 class="contact-form__header">Contact Us</h1>
 
-      <div class="form__section form__section_fullname"> 
-        <div class="form__firstname" >
-          <label for="firstname">First Name *</label>
+      <div class="contact-form__fullname"> 
+        <div class="contact-form__firstname" >
+          <label for="firstname">First Name </label>
           <input type="text" name="" id="firstname" />
         </div>
-        <div class="form__lastname">
-          <label for="lastname">Last Name *</label>
-          <input type="text" name="" id="firstname" />
+        <div class="contact-form__lastname">
+          <label for="lastname">Last Name </label>
+          <input type="text" name="" id="lastname" />
         </div>
       </div>
 
-      <div class="form__section form__section_email">
-        <label for="email" >Email Address *</label>
+      <div class="contact-form__email">
+        <label for="email" >Email Address</label>
         <input type="text" id="email" name="email" />
       </div>
 
-      <div class="form__section form__section_query">
-        <label for="query">Query Type *</label>
-        <div class="form_section form__radio">
-          <div class="form__radio form__radio_general">
+      <div class="contact-form__query">
+        <label for="query">Query Type</label>
+        <div class="contact-form__radio">
+          <div class="contact-form__request">
             <input type="radio" name="query" id="" />General Query
           </div>
-          <div class="form__radio form__radio_general">
+          <div class="contact-form__request" >
             <input type="radio" name="query" id="" />Support Request
           </div>
         </div>
       </div>
 
-      <div class="form__section form__section_message">
-        <label for="message">Message *</label>
+      <div class="contact-form__message">
+        <label for="message">Message </label>
         <textarea name="message" id="message" rows="4" cols="20"></textarea>
       </div>
 
-      <div class="form__section form__section_checkbox">
+      <div class="contact-form__check">
         <input type="checkbox" name="consent" id="consent" /> I consent to being
         contacted by the team
       </div>
 
-      <button type="submit" class="form__button_submit">Submit</button>
-    </form>
+      <button type="submit" class="contact-form__submit">Submit</button>
   </body>
 </html>
