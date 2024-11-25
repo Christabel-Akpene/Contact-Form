@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-.asterisk::after {
+.field-required::after {
     content: "*";
 }
 
