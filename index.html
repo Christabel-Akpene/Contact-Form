@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <form class="contact-form">
@@ -11,22 +18,22 @@
 
       <div class="contact-form__fullname">
         <div class="contact-form__firstname">
-          <label for="firstname">First Name </label>
+          <label for="firstname" class="field-required">First Name </label>
           <input type="text" name="" id="firstname" />
         </div>
         <div class="contact-form__lastname">
-          <label for="lastname">Last Name </label>
+          <label for="lastname" class="field-required">Last Name </label>
           <input type="text" name="" id="lastname" />
         </div>
       </div>
 
       <div class="contact-form__email">
-        <label for="email">Email Address</label>
+        <label for="email" class="field-required">Email Address</label>
         <input type="text" id="email" name="email" />
       </div>
 
       <div class="contact-form__query">
-        <label for="query">Query Type</label>
+        <label for="query" class="field-required">Query Type</label>
         <div class="contact-form__radio">
           <div class="contact-form__request">
             <input type="radio" name="query" id="" />General Query
@@ -38,7 +45,7 @@
       </div>
 
       <div class="contact-form__message">
-        <label for="message">Message </label>
+        <label for="message" class="field-required">Message </label>
         <textarea name="message" id="message" rows="4" cols="20"></textarea>
       </div>
 
