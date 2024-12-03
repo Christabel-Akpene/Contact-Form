@@ -7,6 +7,8 @@
     --primary-font-color: hsl(187, 24%, 22%);
     --primary-font-size: 16px;
     --primary-font-family: "Karla", sans-serif;
+    --primary-font-weight: 400;
+    --secondary-font-weight: 700;
 
 }
 
@@ -18,5 +20,88 @@
 
 .field-required::after {
     content: "*";
+}
+
+body{
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-style: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
+}
+
+.contact-form{
+    background-color: var(--primary-form-color);
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+@media screen and (min-width: 375px) {
+    .contact-form__header{
+    font-weight: var(--secondary-font-weight);
+    margin-bottom: 10px;
+
+}
+
+input, textarea{
+    display: block;
+}
+
+
+input[type="text"] {
+    height: 2.3rem;
+    width: 280px;
+    border-radius: 5px;
+    margin: 10px 0 15px 0;
+
+}
+
+.contact-form__request{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 15px 0;
+    border-radius: 5px;
+    width: 280px;
+
+}
+
+.contact-form__request input[type="radio"]{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+textarea{
+    width: 280px;
+    height: 100px;
+}
+
+
+.contact-form__check{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 290px;
+    gap: 10px;
+   
+}
+
+.contact-form__check input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.contact-form__submit{
+    width: 280px;
+    height: 35px;
+    background-color: var(--primary-button-color);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+   
 }
 
